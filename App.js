@@ -9,6 +9,7 @@ import * as SecureStore from "expo-secure-store";
 import { NavigationContainer } from '@react-navigation/native';
 import TabNaviagtion from './App/Navigations/TabNaviagtion.jsx';
 import * as Location from 'expo-location';
+import { UserLocationContext } from './App/Context/UserLocationContext.js';
 
 
 // Keep the splash screen visible while we fetch resources
@@ -18,6 +19,7 @@ SplashScreen.preventAutoHideAsync();
 export default function App() {
   const [location, setLocation] = useState(null);
   const [errorMsg, setErrorMsg] = useState(null);
+
 
   useEffect(() => {
     (async () => {
@@ -29,8 +31,8 @@ export default function App() {
       }
 
       let location = await Location.getCurrentPositionAsync({});
-      setLocation(location);
-      console.log(location)
+      setLocation(location.coords);
+     
     })();
   }, []);
 
@@ -74,6 +76,7 @@ export default function App() {
   }
   return (
     <ClerkProvider tokenCache={tokenCache} publishableKey={"pk_test_ZmFtb3VzLWdhcmZpc2gtMzkuY2xlcmsuYWNjb3VudHMuZGV2JA"}>
+    <UserLocationContext.Provider value={{location,setLocation } }>
     <View style={styles.container} onLayout={onLayoutRootView}>
     <SignedIn>
           <NavigationContainer>
@@ -86,6 +89,7 @@ export default function App() {
       
       <StatusBar style="auto" />
     </View>
+    </UserLocationContext.Provider>
     </ClerkProvider>
   );
 }
