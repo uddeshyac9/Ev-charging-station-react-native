@@ -27,7 +27,14 @@
       "favicon": "./assets/favicon.png"
     },
     "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow Ev Station App to use your location."
+        }
+      ],
       "expo-font"
     ]
   }
 }
+

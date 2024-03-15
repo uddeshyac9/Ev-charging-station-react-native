@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { useCallback } from 'react';
+import { useCallback,useEffect,useState } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { useFonts } from 'expo-font';
 import * as SplashScreen from 'expo-splash-screen';
@@ -8,6 +8,7 @@ import { ClerkProvider, SignedIn, SignedOut } from "@clerk/clerk-expo";
 import * as SecureStore from "expo-secure-store";
 import { NavigationContainer } from '@react-navigation/native';
 import TabNaviagtion from './App/Navigations/TabNaviagtion.jsx';
+import * as Location from 'expo-location';
 
 
 // Keep the splash screen visible while we fetch resources
@@ -15,6 +16,31 @@ SplashScreen.preventAutoHideAsync();
 
 
 export default function App() {
+  const [location, setLocation] = useState(null);
+  const [errorMsg, setErrorMsg] = useState(null);
+
+  useEffect(() => {
+    (async () => {
+      
+      let { status } = await Location.requestForegroundPermissionsAsync();
+      if (status !== 'granted') {
+        setErrorMsg('Permission to access location was denied');
+        return;
+      }
+
+      let location = await Location.getCurrentPositionAsync({});
+      setLocation(location);
+      console.log(location)
+    })();
+  }, []);
+
+  let text = 'Waiting..';
+  if (errorMsg) {
+    text = errorMsg;
+  } else if (location) {
+    text = JSON.stringify(location);
+  }
+
   const tokenCache = {
     async getToken(key) {
       try {
