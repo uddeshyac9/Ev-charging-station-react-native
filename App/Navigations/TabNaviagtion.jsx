@@ -16,19 +16,19 @@ export default function TabNaviagtion() {
     }}>
     <Tab.Screen name='Home' component={HomeScreen}
     options={{tabBarLabel:'Search', 
-    tabBarActiveTintColor:Colors.BLACK,
+    tabBarActiveTintColor:Colors.Green,
             tabBarIcon:({color,size}) => (
                 <FontAwesome name="search" size={size} color={color} />
             )}}/>
     <Tab.Screen name='Favorite' component={FavoriteScreen}
      options={{ tabBarLabel:'Favorite', 
-     tabBarActiveTintColor:Colors.BLACK,
+     tabBarActiveTintColor:Colors.Green,
              tabBarIcon:({color,size}) => (
                 <AntDesign name="heart" size={size} color={color} />
              )}}/>
     <Tab.Screen name='Profile' component={ProfileScreen}
      options={{ tabBarLabel:'Profile', 
-     tabBarActiveTintColor:Colors.BLACK,
+     tabBarActiveTintColor:Colors.Green,
              tabBarIcon:({color,size}) => (
                 <MaterialIcons name="account-circle" size={size} color={color} />
              )}}/>

@@ -20,20 +20,34 @@ export default function App() {
   const [location, setLocation] = useState(null);
   const [errorMsg, setErrorMsg] = useState(null);
 
-
   useEffect(() => {
-    (async () => {
-      
-      let { status } = await Location.requestForegroundPermissionsAsync();
-      if (status !== 'granted') {
-        setErrorMsg('Permission to access location was denied');
-        return;
-      }
+    let isMounted = true;
 
-      let location = await Location.getCurrentPositionAsync({});
-      setLocation(location.coords);
-     
-    })();
+    const getLocation = async () => {
+      try {
+        let { status } = await Location.requestForegroundPermissionsAsync();
+        if (status !== 'granted') {
+          setErrorMsg('Permission to access location was denied');
+          return;
+        }
+
+        const locationSubscription = Location.watchPositionAsync({}, (newLocation) => {
+          if (isMounted) {
+            setLocation(newLocation.coords);
+          }
+        });
+
+        return () => {
+          isMounted = false;
+          locationSubscription.remove();
+        };
+      } catch (error) {
+        console.error('Error getting location:', error);
+        setErrorMsg('Error getting location');
+      }
+    };
+
+    getLocation();
   }, []);
 
   let text = 'Waiting..';
