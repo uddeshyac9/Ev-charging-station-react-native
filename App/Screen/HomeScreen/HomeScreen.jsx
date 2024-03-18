@@ -1,5 +1,5 @@
 import { View, Text, StatusBar, StyleSheet } from "react-native";
-import React, { useContext, useEffect } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import AppMapView from "./AppMapView";
 import Header from "./Header.jsx";
 import SearchBar from "./SearchBar.jsx";
@@ -11,7 +11,7 @@ export default function HomeScreen() {
   useEffect(() => {
    location&&GetNearByPlace();
   }, [location]);
-  
+  const [placeList,setPlaceList] = useState()
 
   const GetNearByPlace = () => {
     const data = {
@@ -30,7 +30,7 @@ export default function HomeScreen() {
     GlobalApi.NewNearByPlace(data)
       .then((resp) => {
         if (resp) {
-          console.log(JSON.stringify(resp.data));
+          setPlaceList(resp.data?.places);
         } else {
           console.error(
             "Error fetching nearby places: Response data is undefined"
