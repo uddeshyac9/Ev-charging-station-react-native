@@ -1,0 +1,654 @@
+{
+    "places": [
+        {
+            "formattedAddress": "Fun and Food Carnival, NH 58, Khatauli Bypass, Bhainsi, Uttar Pradesh 251201, India",
+            "location": {
+                "latitude": 29.309437600000003,
+                "longitude": 77.72200839999999
+            },
+            "displayName": {
+                "text": "Statiq Charging Station",
+                "languageCode": "en"
+            },
+            "photos": [
+                {
+                    "name": "places/ChIJlz34bRITDDkR-VyqtVg6nyQ/photos/ATplDJYTvMbg-LlBziwNggXGBFhtjHCHeKVgtMTfp_Cq9KEf7WCyDMy2G29-HmjAA3eGi5Ao5rj7tVPQcMSCxfk1I2XNotmR-uDTPSaEvU9Ejd8rmaCB_ul9j57MHDBy9t2W1j1GErJhDNUrnms5keFXIQLQU3_wvTciBRoO",
+                    "widthPx": 1640,
+                    "heightPx": 924,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Statiq Charging Station",
+                            "uri": "//maps.google.com/maps/contrib/113964360571501843393",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjV01Ey869_oXuxgn0SjP7ZqyPIi9ulnBS1I9JNyjITBGQ=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJlz34bRITDDkR-VyqtVg6nyQ/photos/ATplDJZo4-jn6HI5lgMR-IqOCEVCnArfca2pGHaP_al0JJsHmITya6pkTND0CRCzjDdo0BTL12Y7z6Z7Oflf7AhPesZu_hSgS8Q0OVCFb-9LgJu6_xbSpvxhMlxgYScCP8un50UquyA57JPtlvXU2u62410VNp5_GNqdNMB9",
+                    "widthPx": 1500,
+                    "heightPx": 2000,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Statiq Charging Station",
+                            "uri": "//maps.google.com/maps/contrib/113964360571501843393",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjV01Ey869_oXuxgn0SjP7ZqyPIi9ulnBS1I9JNyjITBGQ=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJlz34bRITDDkR-VyqtVg6nyQ/photos/ATplDJYLhPxBy4pVZhX2YBYhO9aau8FkMjirOrqP2i3o33Eis-iFW4Cz-BijZiRit6yacCkMoJhtIgsSfV32URtgM2DV1JkPyknmlgwOR-o0hHwnLetfIyeLa0NKWbA5Baqi70-YsHfhIIYnJbtyp0__ZgBg5inCTQvRil5R",
+                    "widthPx": 1500,
+                    "heightPx": 2000,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Statiq Charging Station",
+                            "uri": "//maps.google.com/maps/contrib/113964360571501843393",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjV01Ey869_oXuxgn0SjP7ZqyPIi9ulnBS1I9JNyjITBGQ=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJlz34bRITDDkR-VyqtVg6nyQ/photos/ATplDJaSnJKzZzlj7uLAvh45PEEzss1h7Eo6ZVoVlGQ-CIW0dktldFyozladCGBpMPm-o7kaLfbk5BFxWfDjfFE7rUWnXAiQi92jpNOIxvAoiCwLTYPYbA7k6aZVRKmliFglGR4Bvz3R3oVsPgbPljEC8qm01T7Xo1rEgjRn",
+                    "widthPx": 2000,
+                    "heightPx": 1500,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Statiq Charging Station",
+                            "uri": "//maps.google.com/maps/contrib/113964360571501843393",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjV01Ey869_oXuxgn0SjP7ZqyPIi9ulnBS1I9JNyjITBGQ=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJlz34bRITDDkR-VyqtVg6nyQ/photos/ATplDJZAzrqIHRmPDf6W8c29P3SgOLDZBTKZV6L8jTF8q0h8vwPTWcaikccyx4GTmy6epv0usOL-R2aDnWqO2ze7v_MXFbQoTl7QjdVoS0hBfSNMcXH-u1YwMg-vT2eZN7uHHVG4aB5_CAyvBOrUOiR2Qdzu1Nqdbc2nVLfa",
+                    "widthPx": 3000,
+                    "heightPx": 4000,
+                    "authorAttributions": [
+                        {
+                            "displayName": "sunil chaudhary",
+                            "uri": "//maps.google.com/maps/contrib/114183717851537411810",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjWGphHGGYUXZYYGcuwsmbiwxG1RD7lLDXOWYemy2ktI-ds=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJlz34bRITDDkR-VyqtVg6nyQ/photos/ATplDJaxDGoVv2CbXikqW-q06iGYAPeSMnchNN0QmizX1sQXzOjyMddQis-aJSXaSGffG9lgyDF6rLTnkKrFiJd5heS2OZxXRYv656a6HDB86K1c12SiJRjGo6OF5iTEuQhVUXrReoDqBE2xroNysbgupntu5M4cLMJcMTbk",
+                    "widthPx": 1500,
+                    "heightPx": 2000,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Statiq Charging Station",
+                            "uri": "//maps.google.com/maps/contrib/113964360571501843393",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjV01Ey869_oXuxgn0SjP7ZqyPIi9ulnBS1I9JNyjITBGQ=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJlz34bRITDDkR-VyqtVg6nyQ/photos/ATplDJYGKhyUHUfC-4v3w_32a5Ix5w6YBiffbAsOu9Wu-uebQ4ewhj0vyIowPo4TK81bLVjki7g8fCSinDDpmRJI3Fn-iLxpyO6gzTeTu_6_Sn8L3MeicSD-1uWkPV7W0RdB9TQ3NZzBkb1OJbxN86qFTAGJ-183j_mjQMoT",
+                    "widthPx": 4000,
+                    "heightPx": 3000,
+                    "authorAttributions": [
+                        {
+                            "displayName": "sunil chaudhary",
+                            "uri": "//maps.google.com/maps/contrib/114183717851537411810",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjWGphHGGYUXZYYGcuwsmbiwxG1RD7lLDXOWYemy2ktI-ds=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJlz34bRITDDkR-VyqtVg6nyQ/photos/ATplDJZ9mJXemUfVwuYPrTNo6BemBf5mH_rUxnS7Z_HiaU_yYYR--tq0TIo7ghMvApr76eD8lYtjzoSADHRFQOYJfnTMSWNWIaLRpmSjrFnoN3AxRJmOqTFxRzlHgHjzWZcYHvZ8BUuQGhLOoKnIRwyVvPZj6GaNm2Nq0okH",
+                    "widthPx": 2000,
+                    "heightPx": 1500,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Statiq Charging Station",
+                            "uri": "//maps.google.com/maps/contrib/113964360571501843393",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjV01Ey869_oXuxgn0SjP7ZqyPIi9ulnBS1I9JNyjITBGQ=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJlz34bRITDDkR-VyqtVg6nyQ/photos/ATplDJbTECsOQx2zVURa_pYuc4Cx8WrbfDLlq6dvNWQz3lFdjy-RAm4YNeUCsnhuM8E4PdcOb3gqthKrqWGbVvnT1l4MZEnV3Bw_ldMDX17kNNySNjOFNRk9SjeLoIpm6uh0IBsapCLLzUa1Pu1GMvWUTvKb0a2oipQOLPta",
+                    "widthPx": 4000,
+                    "heightPx": 3000,
+                    "authorAttributions": [
+                        {
+                            "displayName": "sunil chaudhary",
+                            "uri": "//maps.google.com/maps/contrib/114183717851537411810",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjWGphHGGYUXZYYGcuwsmbiwxG1RD7lLDXOWYemy2ktI-ds=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJlz34bRITDDkR-VyqtVg6nyQ/photos/ATplDJYgT3gML-3KHhSlJiyIh8_m2tk-FJ7MI1c0u6LAV7SmqblamVsZtX8V32sjB5jkW3yzFQsBOjBd9npkZ7m3CqPkvss8Oq5elV_33Its-oPMbJgyLW7gMB6_TMBlEfDdydKwoDv4D0oNCGizf-01w-pGd2HmgGzGvzSF",
+                    "widthPx": 2160,
+                    "heightPx": 3840,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Sachin Gupta",
+                            "uri": "//maps.google.com/maps/contrib/107527523394688962811",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjVTfoFwA1EItNxEFkRIZIJCkSZz8sTbmXVHYU2p76Aj5hE=s100-p-k-no-mo"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "formattedAddress": "NH - 58, Bikano Food Court, near PNB ATM, Rampur Tiraha, Rampur, Uttar Pradesh 251001, India",
+            "location": {
+                "latitude": 29.524877200000002,
+                "longitude": 77.7196579
+            },
+            "displayName": {
+                "text": "Electric Vehicle Charging Station",
+                "languageCode": "en"
+            },
+            "photos": [
+                {
+                    "name": "places/ChIJDdf6KgsdDDkRCPVmvyJpyZA/photos/ATplDJZUmVS0iG9xXjKugtMvQA3rHblJeGhuNT4mbV5DU9gitcK5A2ojNs9KNc_zyPtkxcKNqK7GC0DrZn4wVsP9TA_Fu_MciWa1uX6d1rIj6HJ_wuEHkJ268-Zl1TJ_iTfnJWz29S2wHpjKnx_Jdwi3-ZaN2oO9JVY9dZ0R",
+                    "widthPx": 4032,
+                    "heightPx": 3024,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Dr. Naveen Pandey",
+                            "uri": "//maps.google.com/maps/contrib/104668715736750963461",
+                            "photoUri": "//lh3.googleusercontent.com/a/ACg8ocJ9w5dsFFo6TNRamME4fl2Bj4NnojLw-Of5XKCiCY0lkQ=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJDdf6KgsdDDkRCPVmvyJpyZA/photos/ATplDJabJG4Q0NrrPuUTDHfaJsOWrBGM_1Q5bbH7cDBvcX-BqnTUVzVTicEWkMHO9E5mucX7qwXe0ZTJ4vn_OeqihynR__cucMu50ZNdzJgkkhbUIYI2ynL3KtGWd8Uq1KUR2D5AvAwApbcEPojCqE0HNCTWKVKrVF9Wf3ID",
+                    "widthPx": 3024,
+                    "heightPx": 4032,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Dr. Naveen Pandey",
+                            "uri": "//maps.google.com/maps/contrib/104668715736750963461",
+                            "photoUri": "//lh3.googleusercontent.com/a/ACg8ocJ9w5dsFFo6TNRamME4fl2Bj4NnojLw-Of5XKCiCY0lkQ=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJDdf6KgsdDDkRCPVmvyJpyZA/photos/ATplDJYuRjYW-7iItyJSMoFdh5BnANVlkcXTrup3VXAv7FEwEeyyxLmbU_vI9HJn7GHbq43lpsCwbVwn7Rj1t89PRz_oCBBmzr2yRNueN4-EcSdUV5MUy6eZA-NcmGtXC8BJlLqu3CDCia7UsMUJmM3opCApNQiUAyUM6qVo",
+                    "widthPx": 4284,
+                    "heightPx": 5712,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Dr. Naveen Pandey",
+                            "uri": "//maps.google.com/maps/contrib/104668715736750963461",
+                            "photoUri": "//lh3.googleusercontent.com/a/ACg8ocJ9w5dsFFo6TNRamME4fl2Bj4NnojLw-Of5XKCiCY0lkQ=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJDdf6KgsdDDkRCPVmvyJpyZA/photos/ATplDJaszOGN_-iadA__7IY4kx9jVUNftDQ5dauaPJjqswmiyLblrT4IrJaizaW8CeEoCn1DBHeq1Ra-2jPIV17Hft0a_53-0VtQ9GH2_5UdSJlDv_Fp_3QxdcAli5LuVnE472RYrvec4C6vKiXXOONSK9Z3eRNhZKjVogkw",
+                    "widthPx": 4080,
+                    "heightPx": 1836,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Ajey Nair",
+                            "uri": "//maps.google.com/maps/contrib/109637230393272160485",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjU4LrztZ85oyNaKA6RayZ08BZH8Btoi8JP1fg0C5p8fGV8=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJDdf6KgsdDDkRCPVmvyJpyZA/photos/ATplDJY8AKTkqcA_S9vi4_50WyEhnYSmpi-ULTE55SkHNqcj8tgIrQnya49V65wpePBuLJiu6b8QQtnAwYaBkVN87CTodE6nz1AMEH0d2hA5YrFEsrQsYg8X1o6GM-rcjCkPwbuliYcbdGMlpluq0Vj8hBvxuxw92zOsshq5",
+                    "widthPx": 3024,
+                    "heightPx": 4032,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Dr. Naveen Pandey",
+                            "uri": "//maps.google.com/maps/contrib/104668715736750963461",
+                            "photoUri": "//lh3.googleusercontent.com/a/ACg8ocJ9w5dsFFo6TNRamME4fl2Bj4NnojLw-Of5XKCiCY0lkQ=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJDdf6KgsdDDkRCPVmvyJpyZA/photos/ATplDJZdRQXQbgiSyo5loiBrzGHxAdb4Dux1U98BHhuMic_GOD-sV6YJW6NRwvdH74BD8_71ace7hKr5FKzQ9k6NdHoWWWRcalLZUO589Ph3_nlfR4-B1h8zo1M7CmEvCEGWkBW3QzH1QYMt_kWEnBC6U71nHfReXFVA47JR",
+                    "widthPx": 4032,
+                    "heightPx": 3024,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Dr. Naveen Pandey",
+                            "uri": "//maps.google.com/maps/contrib/104668715736750963461",
+                            "photoUri": "//lh3.googleusercontent.com/a/ACg8ocJ9w5dsFFo6TNRamME4fl2Bj4NnojLw-Of5XKCiCY0lkQ=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJDdf6KgsdDDkRCPVmvyJpyZA/photos/ATplDJbAyrEHQH_I0JWLiyFPCGXB3SCjHs7QKea2QCu76FIH5NNsKd4pr4fR6bPdJ02wvtpG8yjm0Xo2JIaFbFtwuqr4Z0zDMV3DW33Hqv-yiAxYqzfWaPU8BhZuUFjJ27uuLqG3OouYxYRSCe6fDtjDg7useS7MHsjkbD8R",
+                    "widthPx": 2250,
+                    "heightPx": 4000,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Rahul Srivastava",
+                            "uri": "//maps.google.com/maps/contrib/117432994469868742987",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjWAeUtM8HuhmdOY9w44jVTulSopUcUNY4_VKq-kEHvC_tg=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJDdf6KgsdDDkRCPVmvyJpyZA/photos/ATplDJYtOpyxgQJFZDDQldqFv9Ksvmi6yMqO7cz-f6TJngWqURDtJTjxUy_P57A4sRKB4Boqg6nWFmDv525KlX6r0H_30rV2MhJoWZMnaIdf_Qd7szTfy0Mjk0AkOMP8P_R_YxeWHByXu54HX6VKJ2EBpmbEsWFhqpUwUqTJ",
+                    "widthPx": 2250,
+                    "heightPx": 4000,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Rahul Srivastava",
+                            "uri": "//maps.google.com/maps/contrib/117432994469868742987",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjWAeUtM8HuhmdOY9w44jVTulSopUcUNY4_VKq-kEHvC_tg=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJDdf6KgsdDDkRCPVmvyJpyZA/photos/ATplDJZCvgobn_HxvyVdv6us_BzyBZYO05IFDgSbAxV-nSfNBmiyZL_ZLpOOxNtBamtJScpD_T2RDIylxldClmZcdvvwcP70dHZVk28m9ptOWE4Hur5JwPSmEgWfw4Sq1_YB5ioJRNh_JBF12DL4LTyp-V3fRiDHwFl4ZFuW",
+                    "widthPx": 2250,
+                    "heightPx": 4000,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Rahul Srivastava",
+                            "uri": "//maps.google.com/maps/contrib/117432994469868742987",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjWAeUtM8HuhmdOY9w44jVTulSopUcUNY4_VKq-kEHvC_tg=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJDdf6KgsdDDkRCPVmvyJpyZA/photos/ATplDJaDFw4tH4lEe4KCdgmCx3aNOqgQlJcM91notZ3FSi43WlV6QOfeRB1JsnKRYsHIJsFyNmkeVMCWCpshHc_LxGHt7DDm8jTeh-gLUIdaIxMJJHUJIs88YXsv13-LNNcyKEMo8ZagQfLfv_0PuBXeBc7SoM8NDCrljvSV",
+                    "widthPx": 2250,
+                    "heightPx": 4000,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Rahul Srivastava",
+                            "uri": "//maps.google.com/maps/contrib/117432994469868742987",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjWAeUtM8HuhmdOY9w44jVTulSopUcUNY4_VKq-kEHvC_tg=s100-p-k-no-mo"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "formattedAddress": "8P5C+RR, Bhainsi, Uttar Pradesh 251201, India",
+            "location": {
+                "latitude": 29.309455399999994,
+                "longitude": 77.721977
+            },
+            "displayName": {
+                "text": "Electric Vehicle Charging Station",
+                "languageCode": "en"
+            },
+            "photos": [
+                {
+                    "name": "places/ChIJxcHE2eETDDkRM2-qBDE_8CM/photos/ATplDJZhmI1ByjNRZxr6gueLLMHIT3tWrjVfimd8Dwoyt5sEeAEjGm_dqVi_tlY1peinvHmjBnPHV1TUUhM4WUH_jdxfHc7RojmU8HgRT3KdTKzNf8Rsz5iVAyTBXzJR1f7HbZvTXnjzng1hE1BxQHvvlddtKwvneBo0WJ2V",
+                    "widthPx": 4000,
+                    "heightPx": 3000,
+                    "authorAttributions": [
+                        {
+                            "displayName": "gaurav negi",
+                            "uri": "//maps.google.com/maps/contrib/114511974876915361348",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjVdJeBmtquXy034UvJ5B7W4680nfJStXi6jRM74gH637hU=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJxcHE2eETDDkRM2-qBDE_8CM/photos/ATplDJaQqj0WkGnJYu9vxyiwhH6HqHb6pLySG217bGYUdqEbnFxcAcndTDH8_el9A3Uwn2W1ZU5-wf0EvvDDy3ozl9KhndOF7P0TRx9SuDmI6TiFNpqXSLFObMxO9h7jpmXjPieiVlpmRPHkQVVQN-YhMDLdQG1-8ZO88hPx",
+                    "widthPx": 4032,
+                    "heightPx": 3024,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Nagaratna Biradar",
+                            "uri": "//maps.google.com/maps/contrib/100403307088094189686",
+                            "photoUri": "//lh3.googleusercontent.com/a/ACg8ocL5otO4Rg5ieA8fQ7mlJpCbwty_z3OxhZNVOz7EVaZKVA=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJxcHE2eETDDkRM2-qBDE_8CM/photos/ATplDJZyN9j3_0Y0JKuYy2QUJTwYlJDCNCCS1J8L-O8a_qS3p64lktidwxEwY6m6O3UXC-YTwswasSjL8Ywmryyshy42Ynr8d874JoHzgLmhx0K6tW9TMnBparOy_77YEZhw1FD3-ufaPxIk_6GMofjHmL_TdZSRhcDuqAaA",
+                    "widthPx": 3000,
+                    "heightPx": 4000,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Avneesh Saini",
+                            "uri": "//maps.google.com/maps/contrib/117361379247941621454",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjXKfpdz5aMNa2ugcv0Finpyz-OuBjEWex9lUW4KxVTKn0X6=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJxcHE2eETDDkRM2-qBDE_8CM/photos/ATplDJYV1t5jHLZfrMosH_zbfE9rDdRCTd812eihaDEn2GPxQ_TAio-wqTbEXm-WPdDYVmYmigsbVsN4z7QutuOptcUgqBm3d6kTcEGrK4v5mzTPXPWhI1N4oD-NhgIRo9tr5DAKxHG-yz7VQp94iUzU8SpMy5-IwEQFqDWx",
+                    "widthPx": 4000,
+                    "heightPx": 3000,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Avneesh Saini",
+                            "uri": "//maps.google.com/maps/contrib/117361379247941621454",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjXKfpdz5aMNa2ugcv0Finpyz-OuBjEWex9lUW4KxVTKn0X6=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJxcHE2eETDDkRM2-qBDE_8CM/photos/ATplDJbClq9SdD4Yoknq32pdR38ER3OUAJvjK1sHDhICbsM6vwkV8Di_iw4zKwQelk0aVxtvDdohqphdv6PSMPxFxBNLb6yyop58NvG2hFvyPQlMD8616IXcf4OZD2SL3DhmIqErjsdsf5JrX5IKF-kIR27TcSLR5WhkE4TK",
+                    "widthPx": 1080,
+                    "heightPx": 1920,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Ravi Agarwal",
+                            "uri": "//maps.google.com/maps/contrib/105204054014488094695",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjUEavMHUxpnviCsJV8GsYYupEpkOguIn09_7lfxwIE6vZY5=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJxcHE2eETDDkRM2-qBDE_8CM/photos/ATplDJZM_bReb6uragTXNZqYRktagnuULlHZ9cyNT8qQ42pcMz3idqCF80bV23z0jEFCNNwSF5HiJbXZnwkQ8-I57EtK5SfIFW4hdyIBMSDD5qb8Sz03tagayHB_90mPUE49y5S9-yW_f9Fx6jBz4eGff8Kl7q7EjasmJtXC",
+                    "widthPx": 1080,
+                    "heightPx": 1920,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Ravi Agarwal",
+                            "uri": "//maps.google.com/maps/contrib/105204054014488094695",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjUEavMHUxpnviCsJV8GsYYupEpkOguIn09_7lfxwIE6vZY5=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJxcHE2eETDDkRM2-qBDE_8CM/photos/ATplDJaa-rs1m30LXL_PEhswC8DeTgjtIdcRzSyoEABz7cynJ3IhG5snP1HCFkmt8-60qVqWSCan49NX48V0qG8yZ9kBsZH6qx4eJJS1R3YhpXzz_3IXyjC62Fp-lKthl77H0APIkzKTCAQli7JcyGcXvMvTVgFUwtPzPIQJ",
+                    "widthPx": 3024,
+                    "heightPx": 4032,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Sandeep Kumar Pandey",
+                            "uri": "//maps.google.com/maps/contrib/115957335934580112708",
+                            "photoUri": "//lh3.googleusercontent.com/a/ACg8ocJHUF2Oi57nzNp4H5ECSmx7nvGGAShYo_rJY47MXA2w=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJxcHE2eETDDkRM2-qBDE_8CM/photos/ATplDJZIT0hFjZe9E6gUvpgMTIs9EM-H3EYLdHQDGaLqKhzbcB_r8X7SliT7m2lHb3XyxPypGGVNq2wvW8yRBoqKruik1tBDgKPpGUiY1k1uaEFkfjBEX8VtBMZHL2lrtJ2XtTMZgM4OC9vuD5ewsHhYfqXNxZvVNZ2YGuDK",
+                    "widthPx": 4032,
+                    "heightPx": 3024,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Nagaratna Biradar",
+                            "uri": "//maps.google.com/maps/contrib/100403307088094189686",
+                            "photoUri": "//lh3.googleusercontent.com/a/ACg8ocL5otO4Rg5ieA8fQ7mlJpCbwty_z3OxhZNVOz7EVaZKVA=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJxcHE2eETDDkRM2-qBDE_8CM/photos/ATplDJYRWWToEMKfJMD7F9__mMIjdULpO7B_AYEBMIJHElnIsvg4rh-BfZpkwrPeBowpZThnW6PRcXdkrtM2_bE6Fn1pT_43GV0U6yLq_0BUpfCbRUv3S5NvAq8sgN-8_8wKRa0UZRguQMccYi1ILDqt_USh5bNOvVDQGkMc",
+                    "widthPx": 1080,
+                    "heightPx": 1920,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Ravi Agarwal",
+                            "uri": "//maps.google.com/maps/contrib/105204054014488094695",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjUEavMHUxpnviCsJV8GsYYupEpkOguIn09_7lfxwIE6vZY5=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJxcHE2eETDDkRM2-qBDE_8CM/photos/ATplDJZZSkH7kudEj-9OvcRz-7opFKxkzEPr8U4AN9Kw4pVZy4ZZYID06gun9ZEVLjhZddJ8BWEYPigPmWQhu74MUGJost72mZlSCTT7JROvvR4e6BqSqy5GxlJxqFrVU8YWfCkbYWXOGTlv9i_Fd1XYfxx9s5ezStEgnjHv",
+                    "widthPx": 3000,
+                    "heightPx": 4000,
+                    "authorAttributions": [
+                        {
+                            "displayName": "gaurav negi",
+                            "uri": "//maps.google.com/maps/contrib/114511974876915361348",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjVdJeBmtquXy034UvJ5B7W4680nfJStXi6jRM74gH637hU=s100-p-k-no-mo"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "formattedAddress": "2/1260, Ram Nagar, Saharanpur, Uttar Pradesh 247001, India",
+            "location": {
+                "latitude": 29.9644479,
+                "longitude": 77.5483479
+            },
+            "displayName": {
+                "text": "Electric Vehicle Charging Station",
+                "languageCode": "en"
+            },
+            "evChargeOptions": {}
+        },
+        {
+            "formattedAddress": "VVX5+2RC, Dehradun Rd, Nehru Nagar, Roorkee, Uttarakhand 247667, India",
+            "location": {
+                "latitude": 29.897556499999997,
+                "longitude": 77.859524
+            },
+            "displayName": {
+                "text": "Electric Vehicle Charging Station",
+                "languageCode": "en"
+            },
+            "photos": [
+                {
+                    "name": "places/ChIJHZQmJb21DjkRxSbSXvUQHJQ/photos/ATplDJadN5OF5nqDWTyAtcGeXGkJjA7XAPl5uNf8LvKlYLdux40bEMgPuSJcj2T95sa5lYmL1HBtidlol2pCMAuoPRVxhz1qvD-ZypPz0hLqUlEUxgfYPVN08EmbzMy9oz57_IF9IsSwzuxIV-tpctCnqZCipcuHfTRfyYV1",
+                    "widthPx": 4624,
+                    "heightPx": 3468,
+                    "authorAttributions": [
+                        {
+                            "displayName": "shashank rastogi",
+                            "uri": "//maps.google.com/maps/contrib/110418754777317580138",
+                            "photoUri": "//lh3.googleusercontent.com/a/ACg8ocJSRW5vcnvVQrKI8sFQjCpFshvc9pb84LMCUk8ZkzoL=s100-p-k-no-mo"
+                        }
+                    ]
+                }
+            ],
+            "evChargeOptions": {
+                "connectorCount": 1,
+                "connectorAggregation": [
+                    {
+                        "type": "EV_CONNECTOR_TYPE_UNSPECIFIED_WALL_OUTLET",
+                        "maxChargeRateKw": 3.4000000953674316,
+                        "count": 1
+                    }
+                ]
+            }
+        },
+        {
+            "formattedAddress": "W4F7+5JG, Haridwar Main Rd, unchi sadak, Sharda Nagar, Jwalapur, Haridwar, Uttarakhand 249407, India",
+            "location": {
+                "latitude": 29.922941599999998,
+                "longitude": 78.1140855
+            },
+            "displayName": {
+                "text": "Electric Vehicle Charging Station",
+                "languageCode": "en"
+            },
+            "photos": [
+                {
+                    "name": "places/ChIJa6HBLPVHCTkRQL9Yu80tQe0/photos/ATplDJaj5HNHAYkb9CjHWBMUVmyvH9Q3p3bXMM77NbbsD-RnZfjK_A-W6Q_brBXlog9Fy4voWWuHj_sYNh-hCHM00FvuqB5YNUoQi7Oq5WwAUchNR-ZI__54TFFeY46mp-cKZa__MqoU2hk4aDeagDZdO8B_dol80YVY6CC9",
+                    "widthPx": 1506,
+                    "heightPx": 1418,
+                    "authorAttributions": [
+                        {
+                            "displayName": "PR Motors",
+                            "uri": "//maps.google.com/maps/contrib/118203733710434999785",
+                            "photoUri": "//lh3.googleusercontent.com/a/ACg8ocLhy77SidOaYoNprVI4G2XA5yhsEUgKwveDPyUfBPnX=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJa6HBLPVHCTkRQL9Yu80tQe0/photos/ATplDJbWZctv_wFZMyEGzz1hDS4WZvYfW-dwl9ORFxDKypNPDP5sZGvEXnfQX10Lx_ohRg9A79ucD9MFdsuFdLPrsFgwHODG2_O6OKHo1GuU6nq-envqyrf2v5lN_swObUssBuiEeGLWNwta8JDF4P0EbMJsm1tsdVNr9M0v",
+                    "widthPx": 4160,
+                    "heightPx": 1968,
+                    "authorAttributions": [
+                        {
+                            "displayName": "PR Motors",
+                            "uri": "//maps.google.com/maps/contrib/118203733710434999785",
+                            "photoUri": "//lh3.googleusercontent.com/a/ACg8ocLhy77SidOaYoNprVI4G2XA5yhsEUgKwveDPyUfBPnX=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJa6HBLPVHCTkRQL9Yu80tQe0/photos/ATplDJZVNe9wtV7gBd8hgqGeorF2Gll9u-h40ZodY7rDrvFIAFdB4t1ZUjYsaN-jzC9mb9M7wPCFh9cLkOh5id0OOpO6IqKQC4xSBoDesfFfo5UTlRu91NsiOHIYcF8BGnywhBNmL2n6l4RDWnI_J6iIJCoWiwkU3ao6v_6Z",
+                    "widthPx": 2352,
+                    "heightPx": 1035,
+                    "authorAttributions": [
+                        {
+                            "displayName": "PR Motors",
+                            "uri": "//maps.google.com/maps/contrib/118203733710434999785",
+                            "photoUri": "//lh3.googleusercontent.com/a/ACg8ocLhy77SidOaYoNprVI4G2XA5yhsEUgKwveDPyUfBPnX=s100-p-k-no-mo"
+                        }
+                    ]
+                }
+            ],
+            "evChargeOptions": {}
+        },
+        {
+            "formattedAddress": "NH 58, Delhi-Haridwar Highway, Near 104 Km Mile Stone, Mansurpur, Uttar Pradesh 251203, India",
+            "location": {
+                "latitude": 29.344224699999994,
+                "longitude": 77.7154877
+            },
+            "displayName": {
+                "text": "TATA Charging Station",
+                "languageCode": "en"
+            }
+        },
+        {
+            "formattedAddress": "W3WG+J98, Pentagon Mall Rd, Integrated Industrial Estate, Sector 12, BHEL Township, Haridwar, Uttarakhand 249403, India",
+            "location": {
+                "latitude": 29.946549200000003,
+                "longitude": 78.0759544
+            },
+            "displayName": {
+                "text": "ZEVpoint Charging Station",
+                "languageCode": "en"
+            },
+            "evChargeOptions": {
+                "connectorCount": 1,
+                "connectorAggregation": [
+                    {
+                        "type": "EV_CONNECTOR_TYPE_TYPE_2",
+                        "maxChargeRateKw": 22,
+                        "count": 1
+                    }
+                ]
+            }
+        },
+        {
+            "formattedAddress": "NH 58, KHANUPUR, Mansurpur Sugar Mill, Mansurpur, Khanupur, Uttar Pradesh 251203, India",
+            "location": {
+                "latitude": 29.347547600000002,
+                "longitude": 77.71476919999999
+            },
+            "displayName": {
+                "text": "E-Fill Charging Station",
+                "languageCode": "en"
+            },
+            "photos": [
+                {
+                    "name": "places/ChIJX4V9wIsRDDkRoRXnoeHgfLE/photos/ATplDJZZVpBVdPsb6pfg4LgdRGJFF3IxRUztby8VVyHVqXNT0ZOupd40A0L4aFyzFa5fSB1t_y6TmszePR0LKGTuQcDjzVNvR7U9SnqGffUzeYDpCSa5VcbGTJxoqHmNbTwcBZtvnHX2bqzqLxH2Axrn3ny5zNPEQmfBWSmQ",
+                    "widthPx": 4032,
+                    "heightPx": 3024,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Akshay Kumar",
+                            "uri": "//maps.google.com/maps/contrib/100416141688796205321",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjVjL_SZTCoFFXc3088lU6jn3HvQLjPgG-Nhn7LOvxE3ZmM=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJX4V9wIsRDDkRoRXnoeHgfLE/photos/ATplDJZ6lXWsQuvWdvEvTVG-Ewoh8wJLlM8EWwRdToeoLlICGQKeu9-wM9I85kHf14mr208pRBEUXNDlTLW8X9zfdk7iGeoXF-7s6zghLVeHP1Uu1_WUCG34IKWU9FNbjOBAhsboi5X9xFVNSIEXX2uFBP6c3_yLrmMsdhMR",
+                    "widthPx": 1800,
+                    "heightPx": 4000,
+                    "authorAttributions": [
+                        {
+                            "displayName": "ASHISH PANWAR",
+                            "uri": "//maps.google.com/maps/contrib/114744747033730957174",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjVB-XnvNjl83tUJuFNFV8giyGugQ2qvS_-E4zU1kjipglw=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJX4V9wIsRDDkRoRXnoeHgfLE/photos/ATplDJbs223BM-qDe0anXxvH2xqzULavwIRhjwyc1S46-yX-b3WaqxV4XEr0KUM1qInhhVewsgIr7l-CwrySFFU5ARoYv690mN8bY7WcxWYUTpg5YY6XxvAAdkpaWdPUfceqarD39GNJFznsHh_ofMZ7SLtP185Wu7eutZgV",
+                    "widthPx": 3024,
+                    "heightPx": 4032,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Akshay Kumar",
+                            "uri": "//maps.google.com/maps/contrib/100416141688796205321",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjVjL_SZTCoFFXc3088lU6jn3HvQLjPgG-Nhn7LOvxE3ZmM=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJX4V9wIsRDDkRoRXnoeHgfLE/photos/ATplDJZBNRj1Yf93ED12E_GId9yGZpQnYRPKaxSm8xLT6X6IJc4D6_k5-p-CRjktK2R9T7yWwAr1Ul_GjXso0aHQk92-KpB07hjd62ZD1M36OCDjeYd6IsO1PSKhDx2lKigzTxc7XoP9Ka9Sr3axJGp7bQ0EWUt13YWrjuer",
+                    "widthPx": 4032,
+                    "heightPx": 3024,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Akshay Kumar",
+                            "uri": "//maps.google.com/maps/contrib/100416141688796205321",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjVjL_SZTCoFFXc3088lU6jn3HvQLjPgG-Nhn7LOvxE3ZmM=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJX4V9wIsRDDkRoRXnoeHgfLE/photos/ATplDJYm_g6A8xOST5seZUPnsGLfSsvhPhGu3say8tKVPHlmTE2RVKAuhkN5hm15zP8J6xdQDOTyEJozekisuNSXvK18Dp7uG67zbr0f8swsu7NfouduG7oFcuewgSt-jyQMRTDuIpKL94PQQ6Te72epZcvNrcuNWkIfijpb",
+                    "widthPx": 2296,
+                    "heightPx": 4080,
+                    "authorAttributions": [
+                        {
+                            "displayName": "ASHISH PANWAR",
+                            "uri": "//maps.google.com/maps/contrib/114744747033730957174",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjVB-XnvNjl83tUJuFNFV8giyGugQ2qvS_-E4zU1kjipglw=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJX4V9wIsRDDkRoRXnoeHgfLE/photos/ATplDJaYFWwHPp6KL0-BtQ9FuiDymfPz3O5YkF0vVpXUmpaABcP3L6GkrX2US_lJ43HX51c3KHlT2Xqei12wd7v-duIyYOoMf7t9KnuwYayDPSFsJo7gSruJmH_9g_IJVOSa5aS6oL8-VhNVgzkEV_L6w3utmC7lKkzehONL",
+                    "widthPx": 4032,
+                    "heightPx": 3024,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Akshay Kumar",
+                            "uri": "//maps.google.com/maps/contrib/100416141688796205321",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjVjL_SZTCoFFXc3088lU6jn3HvQLjPgG-Nhn7LOvxE3ZmM=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJX4V9wIsRDDkRoRXnoeHgfLE/photos/ATplDJZwUYB2PEH0m7mn6QWnL4XGWNm3tv5MGqXjqdRAmGcGr-YTIiGhENST4HMgU31Lmo4Qu0JP0OHWI6cPewJ5Lb6dLY9vqGO5D34NxAdKyn6-YyESsS_BhgHBmMHetJoVOjmEPNxc0OeXEf9231ENghVZjG1TDLKdh9hS",
+                    "widthPx": 3024,
+                    "heightPx": 4032,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Akshay Kumar",
+                            "uri": "//maps.google.com/maps/contrib/100416141688796205321",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjVjL_SZTCoFFXc3088lU6jn3HvQLjPgG-Nhn7LOvxE3ZmM=s100-p-k-no-mo"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "formattedAddress": "HQ97+MVP, Chhapar, Uttar Pradesh 251307, India",
+            "location": {
+                "latitude": 29.5691724,
+                "longitude": 77.7647693
+            },
+            "displayName": {
+                "text": "Electric Vehicle Charging Station",
+                "languageCode": "en"
+            },
+            "photos": [
+                {
+                    "name": "places/ChIJGUoR0vsDDDkRpAEMopBIdeI/photos/ATplDJbrNQEd3J4wHP4-dQSacHbdcHmn158ckE6S4eCPYGHzSgzWWbW-yCvhqiawq_3yYxtWpD6GgeVCZps6UdA7z8TASSgUSMrlGTgYg0lPiYAwcy3XMGKdPAeJ3IKkNoT9oX7AUDcuuVY-brz1wVrOYWyabRY3wdQSDtuM",
+                    "widthPx": 4624,
+                    "heightPx": 3468,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Harshit Goel",
+                            "uri": "//maps.google.com/maps/contrib/115795213221695987157",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjVabEi3QPHSJVUbE0rnr3iMn3N0DAmwMzV1UWc-2D448pw=s100-p-k-no-mo"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

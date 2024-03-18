@@ -4,7 +4,13 @@ import { GooglePlacesAutocomplete } from "react-native-google-places-autocomplet
 import Colors from "../../Utils/Colors";
 import { FontAwesome } from '@expo/vector-icons';
 
-export default function SearchBar() {
+import {API_KEY} from '@env'
+
+
+export default function SearchBar({searchedLocation}) {
+
+  // const apiKey = process.env.EXPO_PUBLIC_GOOGLE_API_KEY;
+ 
   return (
     <View style={styles.container}>
         <FontAwesome name="map-marker" size={24} color={Colors.GRAY} style={{paddingTop:10}} />
@@ -14,11 +20,12 @@ export default function SearchBar() {
         fetchDetails={true}
         onPress={(data, details = null) => {
           // 'details' is provided when fetchDetails = true
-          console.log(data, details);
-          g;
+          // console.log(data, details);
+          searchedLocation(details?.geometry?.location)
+          
         }}
         query={{
-          key: "AIzaSyC4P5JuLt114zpMbpTn0yoezIQXrGYxKJs",
+          key: API_KEY,
           language: "en",
         }}
       />
