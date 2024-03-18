@@ -5,6 +5,7 @@ import Header from "./Header.jsx";
 import SearchBar from "./SearchBar.jsx";
 import { UserLocationContext } from "../../Context/UserLocationContext";
 import GlobalApi from "../../Utils/GlobalApi.js";
+import PlaceListView from "./PlaceListView";
 
 export default function HomeScreen() {
   const { location, setLocation } = useContext(UserLocationContext);
@@ -56,6 +57,9 @@ export default function HomeScreen() {
       </View>
       <View>
         <AppMapView />
+        <View style={styles.placeListContainer}>
+          <PlaceListView placeList={placeList}/>
+        </View>
       </View>
     </View>
   );
@@ -67,5 +71,10 @@ const styles = StyleSheet.create({
     padding: 10,
     width: "100%",
     paddingHorizontal: 20,
-  },
+  }, placeListContainer: {
+    position:'absolute',
+    zIndex:10,
+    bottom:0,
+    width:'100%'
+  }
 });
