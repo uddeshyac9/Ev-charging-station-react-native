@@ -5,9 +5,10 @@ import PlaceItem from './PlaceItem'
 export default function PlaceListView ({placeList}) {
     // console.log('NearBy Ev Station',placeList);
   return (
-    <View>
+    <View style={{borderRadius:10}}>
       <FlatList
       horizontal={true}
+      // pagingEnabled
       showsHorizontalScrollIndicator={false}
       data={placeList}
       renderItem={({item, index})=> (

@@ -5,8 +5,10 @@ import React, { useContext, useEffect,useState } from 'react'
 import MapViewStyle from './../../Utils/MapViewStyle.json'
 import { UserLocationContext } from '../../Context/UserLocationContext';
 import  MapView,{Marker, PROVIDER_GOOGLE } from 'react-native-maps';
+import Markers from './Markers.jsx';
 
-export default function AppMapView() {
+export default function AppMapView({placeList}) {
+  
   const {location,setLocation} =useContext(UserLocationContext);
   const [currentLocation, setCurrentLocation] = useState(null);
 
@@ -27,10 +29,11 @@ export default function AppMapView() {
         region={{
           latitude: location?.latitude,
           longitude: location?.longitude, // Use correct longitude
-          latitudeDelta: 0.02,
-          longitudeDelta: 0.02,
+          latitudeDelta: 0.09,
+          longitudeDelta: 0.09,
           }}> 
-     <Marker
+     {location?    
+      <Marker 
   coordinate={{
     latitude: currentLocation?.latitude,
     longitude: currentLocation?.longitude,
@@ -42,11 +45,14 @@ export default function AppMapView() {
     source={require('./../../../assets/Images/car-marker-bg.jpg')}
     style={{ width: 55, height: 55,borderRadius:99 }} // Adjust width and height as needed
   />
-</Marker>
+</Marker>: null}
+{placeList&&placeList.map ( ((item, index)=>
+<Markers key={index} place={item}/>
+))
+}
       </MapView>
     </View>
-  )
-}
+  )}
 
 const styles = StyleSheet.create({
     container: {

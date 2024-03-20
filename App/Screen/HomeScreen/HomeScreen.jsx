@@ -56,7 +56,7 @@ export default function HomeScreen() {
         />
       </View>
       <View>
-        <AppMapView />
+       {placeList&& <AppMapView placeList={placeList}/>} 
         <View style={styles.placeListContainer}>
        {placeList&& <PlaceListView placeList={placeList}/>}  
         </View>
