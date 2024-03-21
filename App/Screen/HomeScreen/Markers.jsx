@@ -3,7 +3,7 @@ import React, { useEffect } from 'react'
 import  MapView,{Marker, PROVIDER_GOOGLE } from 'react-native-maps';
 import PlaceItem from './PlaceItem';
 
-export default function Markers({place}) {
+export default function Markers({place,index}) {
    
   return place&&(
     <View>
@@ -11,7 +11,8 @@ export default function Markers({place}) {
   coordinate={{
     latitude: place.location?.latitude,
     longitude: place.location?.longitude,
-  }}
+  }} 
+  onPress={()=>{console.log("Marker Index",index);}}
   title="EV Charging Station"
   description="You are here" >
   <Image

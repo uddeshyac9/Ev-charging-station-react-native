@@ -50,8 +50,11 @@ export default function HomeScreen() {
         <Header />
         <SearchBar
           searchedLocation={(location) => {
-            // setLocation(location)
-            console.log(location);
+            setLocation({
+              latitude:location.lat,
+              longitude:location.lng
+            })
+            
           }}
         />
       </View>

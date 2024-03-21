@@ -42,12 +42,12 @@ export default function AppMapView({placeList}) {
   description="You are here"
 >
   <Image
-    source={require('./../../../assets/Images/car-marker-bg.jpg')}
-    style={{ width: 55, height: 55,borderRadius:99 }} // Adjust width and height as needed
+    source={require('./../../../assets/Images/car-marker.jpg')}
+    style={{ width: 50, height: 50,objectFit:'contain', borderRadius:50 }} // Adjust width and height as needed
   />
 </Marker>: null}
 {placeList&&placeList.map ( ((item, index)=>
-<Markers key={index} place={item}/>
+<Markers key={index} place={item} index={index}/>
 ))
 }
       </MapView>
