@@ -15,20 +15,20 @@ import { Ionicons } from "@expo/vector-icons";
 import { getFirestore } from "firebase/firestore";
 import { app } from "../../Utils/FirebaseConfig";
 import { doc, setDoc } from "firebase/firestore";
-import uuid from "react-native-uuid";
+
 import { useUser } from "@clerk/clerk-expo";
 
 export default function PlaceItem({ place }) {
   const { user } = useUser();
   const PLACE_PHOTO_BASE_URL = "https://places.googleapis.com/v1/";
 
-  const placeId = uuid.v4();
+
   // Initialize Cloud Firestore and get a reference to the service
 
   const db = getFirestore(app);
   const onSetFav = async (place) => {
     // Add a new document in collection "ev-fav-place"
-    await setDoc(doc(db, "ev-fav-place", placeId.toString()), {
+    await setDoc(doc(db, "ev-fav-place", (place.id).toString()), {
       place: place,
       email: user?.primaryEmailAddress?.emailAddress,
     });
