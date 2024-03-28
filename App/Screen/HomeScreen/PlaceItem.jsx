@@ -5,6 +5,9 @@ import {
   Dimensions,
   Pressable,
   ToastAndroid,
+  StyleSheet,
+  Platform,
+  Linking,
 } from "react-native";
 import React from "react";
 import Colors from "../../Utils/Colors";
@@ -14,28 +17,48 @@ import { FontAwesome5 } from "@expo/vector-icons";
 import { Ionicons } from "@expo/vector-icons";
 import { getFirestore } from "firebase/firestore";
 import { app } from "../../Utils/FirebaseConfig";
-import { doc, setDoc } from "firebase/firestore";
-
+import { doc, setDoc, deleteDoc } from "firebase/firestore";
+import { AntDesign } from "@expo/vector-icons";
 import { useUser } from "@clerk/clerk-expo";
 
-export default function PlaceItem({ place }) {
+export default function PlaceItem({ place, isfav, markedFav }) {
   const { user } = useUser();
   const PLACE_PHOTO_BASE_URL = "https://places.googleapis.com/v1/";
 
-
   // Initialize Cloud Firestore and get a reference to the service
-
+  const onDirectionClick = () => {
+    const latitude = place?.location?.latitude;
+    const longitude = place?.location?.longitude;
+    const displayName = encodeURIComponent(place?.displayName?.text);
+  
+    let url;
+    if (Platform.OS === 'ios') {
+      // Apple Maps URL
+      url = `maps://maps.apple.com/?q=${latitude},${longitude}&name=${displayName}`;
+    } else {
+      // Google Maps URL
+      url = `https://www.google.com/maps/search/?api=1&query=${latitude},${longitude}&query_place_id=${place.id}`;
+    }
+  
+    Linking.openURL(url);
+  }
+  
   const db = getFirestore(app);
   const onSetFav = async (place) => {
     // Add a new document in collection "ev-fav-place"
-    await setDoc(doc(db, "ev-fav-place", (place.id).toString()), {
+    await setDoc(doc(db, "ev-fav-place", place.id.toString()), {
       place: place,
       email: user?.primaryEmailAddress?.emailAddress,
     });
-
+    markedFav();
     ToastAndroid.show("Fav Ev Station Added!", ToastAndroid.TOP);
   };
 
+  const onDeleteFav = async (placeId) => {
+    await deleteDoc(doc(db, "ev-fav-place", place.id.toString()));
+    markedFav();
+    ToastAndroid.show("Fav Ev Station Removed!", ToastAndroid.TOP);
+  };
   return (
     <View
       style={{
@@ -50,12 +73,18 @@ export default function PlaceItem({ place }) {
         end={{ x: 1, y: 1 }}
         style={{ flex: 1 }}
       >
-        <Pressable
-          style={{ position: "absolute", right: 0, margin: 5, zIndex: 10 }}
-          onPress={() => onSetFav(place)}
-        >
-          <Ionicons name="heart-outline" size={30} color="white" />
-        </Pressable>
+        {!isfav ? (
+          <Pressable style={styles.favbutton} onPress={() => onSetFav(place)}>
+            <Ionicons name="heart-outline" size={30} color="white" />
+          </Pressable>
+        ) : (
+          <Pressable
+            style={styles.favbutton}
+            onPress={() => onDeleteFav(place.id)}
+          >
+            <AntDesign name="heart" size={30} color="red" />
+          </Pressable>
+        )}
 
         <Image
           source={
@@ -128,18 +157,28 @@ export default function PlaceItem({ place }) {
                 : "Not Known"}
             </Text>
           </View>
-          <View
-            style={{
-              padding: 8,
-              backgroundColor: Colors.PRIMARY,
-              borderRadius: 6,
-              paddingHorizontal: 14,
-            }}
+          <Pressable
+            style={styles.dirButton}
+            onPress={() => onDirectionClick()}
           >
             <FontAwesome5 name="location-arrow" size={24} color="white" />
-          </View>
+          </Pressable>
         </View>
       </LinearGradient>
     </View>
   );
 }
+const styles = StyleSheet.create({
+  favbutton: {
+    position: "absolute",
+    right: 0,
+    margin: 5,
+    zIndex: 10,
+  },
+  dirButton: {
+    padding: 8,
+    backgroundColor: Colors.PRIMARY,
+    borderRadius: 6,
+    paddingHorizontal: 14,
+  },
+});

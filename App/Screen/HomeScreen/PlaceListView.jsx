@@ -1,5 +1,5 @@
 import { View, Text, FlatList, Dimensions, StyleSheet } from "react-native";
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import PlaceItem from "./PlaceItem";
 import { getFirestore } from "firebase/firestore";
 import { app } from "../../Utils/FirebaseConfig";
@@ -10,23 +10,36 @@ export default function PlaceListView({ placeList }) {
   // console.log('NearBy Ev Station',placeList);
 
 
+  const [favlist, setFavlist] = useState([])
 
   useEffect(()=> {
-    user&&getData()
+    user&&getFav()
+    // console.log(favlist);
   },[user])
   const db = getFirestore(app);
   //get user details
   const {user} = useUser()
   //Get data from firestore
-  const getData = async () => {
+  const getFav = async () => {
+    setFavlist([])
     const q = query(collection(db, "ev-fav-place"), where("email", "==", user?.primaryEmailAddress?.emailAddress));
 
     const querySnapshot = await getDocs(q);
     querySnapshot.forEach((doc) => {
       // doc.data() is never undefined for query doc snapshots
-      console.log(doc.id, " => ", doc.data());
+    //  console.log(doc.id, " => ", doc.data());
+      setFavlist(favlist=> [...favlist,doc.data()]);
+      
     });
   };
+
+const isfav = (place) => {
+ const result= favlist.find(item=> item.place.id == place.id);
+//  console.log(result);
+   return result?true:false;
+}
+
+
 
   useEffect(() => {
     scrollToIndex(4);
@@ -40,6 +53,9 @@ export default function PlaceListView({ placeList }) {
   const scrollToIndex = (index) => {
     flatListRef.current?.scrollToIndex({ animated: true, index });
   };
+
+
+
   return (
     placeList && (
       <View>
@@ -52,7 +68,7 @@ export default function PlaceListView({ placeList }) {
           data={placeList}
           renderItem={({ item, index }) => (
             <View key={index} style={styles.container}>
-              <PlaceItem place={item} />
+              <PlaceItem place={item}  isfav={isfav(item)} markedFav={()=> getFav()}/>
             </View>
           )}
         />
