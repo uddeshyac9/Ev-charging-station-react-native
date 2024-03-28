@@ -7,7 +7,7 @@ import {
   ToastAndroid,
   StyleSheet,
   Platform,
-  Linking,
+ 
 } from "react-native";
 import React from "react";
 import Colors from "../../Utils/Colors";
@@ -20,6 +20,7 @@ import { app } from "../../Utils/FirebaseConfig";
 import { doc, setDoc, deleteDoc } from "firebase/firestore";
 import { AntDesign } from "@expo/vector-icons";
 import { useUser } from "@clerk/clerk-expo";
+import * as Linking from 'expo-linking';
 
 export default function PlaceItem({ place, isfav, markedFav }) {
   const { user } = useUser();
