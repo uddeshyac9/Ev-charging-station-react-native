@@ -30,8 +30,8 @@ export default function LoginScreen() {
   const { startOAuthFlow } = useOAuth({ strategy: "oauth_google" });
   return (
     <View style={styles.loginContainer}>
-      <Image style={styles.logoImage} source={require('./../../../assets/Images/logo.png')}/>
-      <Image style={styles.backgroundImage} source={require('./../../../assets/Images/ev-charging.jpg')}/>
+      <Image style={styles.logoImage} source={require('./../../../assets/Images/logo-white.png')}/>
+      <Image style={styles.backgroundImage} source={require('./../../../assets/Images/login-bg.jpg')}/>
         <View style={{padding:20}}>
           <Text style={styles.heading}>Your Ultimate Ev charging Station Finder App </Text>
           <Text style={styles.subHeading}> Find EV charging station near you, plan trip and so much 

@@ -1,4 +1,4 @@
-import { View, Text, StatusBar, StyleSheet } from "react-native";
+import { View, Text, StatusBar, StyleSheet,ActivityIndicator } from "react-native";
 import React, { useContext, useEffect, useState } from "react";
 import AppMapView from "./AppMapView";
 import Header from "./Header.jsx";
@@ -6,12 +6,15 @@ import SearchBar from "./SearchBar.jsx";
 import { UserLocationContext } from "../../Context/UserLocationContext";
 import GlobalApi from "../../Utils/GlobalApi.js";
 import PlaceListView from "./PlaceListView";
+import { SelectMarkerContext } from '../../Context/SelectMarkerContext'
 
 export default function HomeScreen() {
+  const [selectedMarker,setSelectedMarker]=useState(0);
   const { location, setLocation } = useContext(UserLocationContext);
-  useEffect(() => {
-   location&&GetNearByPlace();
-  }, [location]);
+  useEffect(()=>{
+    setSelectedMarker(0)
+    location&&GetNearByPlace();
+  },[location])
   const [placeList,setPlaceList] = useState()
 
   const GetNearByPlace = () => {
@@ -44,27 +47,24 @@ export default function HomeScreen() {
   };
 
   return (
+    <SelectMarkerContext.Provider value={{selectedMarker,setSelectedMarker}}>
     <View>
-      {/* <StatusBar backgroundColor="#3b5998" /> */}
       <View style={styles.headerContainer}>
         <Header />
-        <SearchBar
-          searchedLocation={(location) => {
-            setLocation({
-              latitude:location.lat,
-              longitude:location.lng
-            })
-            
-          }}
-        />
+        <SearchBar 
+        searchedLocation={(location) => 
+        setLocation({
+          latitude:location.lat,
+          longitude:location.lng
+        })} />
       </View>
-      <View>
-       {placeList&& <AppMapView placeList={placeList}/>} 
-        <View style={styles.placeListContainer}>
-       {placeList&& <PlaceListView placeList={placeList}/>}  
-        </View>
+      {!placeList?<ActivityIndicator size={'large'}/>
+      : <AppMapView placeList={placeList}/>}
+      <View style={styles.placeListContainer}>
+        {placeList&&<PlaceListView placeList={placeList} />}
       </View>
     </View>
+    </SelectMarkerContext.Provider>
   );
 }
 const styles = StyleSheet.create({

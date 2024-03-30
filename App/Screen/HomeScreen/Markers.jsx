@@ -1,28 +1,46 @@
-import { View, Text, Image} from 'react-native'
-import React, { useEffect } from 'react'
-import  MapView,{Marker, PROVIDER_GOOGLE } from 'react-native-maps';
-import PlaceItem from './PlaceItem';
+import { View, Text, Image, TouchableOpacity } from 'react-native'
+import React, { useContext } from 'react'
+import { Marker } from 'react-native-maps'
+import Colors from '../../Utils/Colors'
+import { SelectMarkerContext } from '../../Context/SelectMarkerContext'
 
-export default function Markers({place,index}) {
+export default function Markers({index, place }) {
    
-  return place&&(
-    <View>
-          <Marker 
-  coordinate={{
-    latitude: place.location?.latitude,
-    longitude: place.location?.longitude,
-  }} 
-  onPress={()=>{console.log("Marker Index",index);}}
-  title="EV Charging Station"
-  description="You are here" >
+  const {selectedMarker,setSelectedMarker}=useContext(SelectMarkerContext);
+  return place && (
+
+    <Marker
+      coordinate={{
+        latitude: place.location?.latitude,
+        longitude: place.location?.longitude
+      }}
+
+      onPress={()=>setSelectedMarker(index)}
+    >
+           
+           {selectedMarker === index ? (
+  <Image
+    source={require('./../../../assets/Images/marker-selected.png')}
+    style={{
+      width: 50, height: 50,objectFit:'contain', borderRadius:50 ,
+      // zIndex: 5,
+    }}
+  />
+) : (
   <Image
     source={require('./../../../assets/Images/ev-marker.png')}
-    style={{ width: 35, height: 35,borderRadius:99,objectFit:'contain' }}
-  /> 
-  
-</Marker>
-  
-    </View>
+    style={{
+      width: 50, height: 50,objectFit:'contain', borderRadius:50 ,
+      // zIndex: -1,
+    }}
+  />
+)}
+
+     
+
+    </Marker>
+   
+   
   )
 }
 

@@ -1,14 +1,18 @@
 import { View, Text, FlatList, Dimensions, StyleSheet } from "react-native";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState,useContext } from "react";
 import PlaceItem from "./PlaceItem";
 import { getFirestore } from "firebase/firestore";
 import { app } from "../../Utils/FirebaseConfig";
 import { collection, query, where, getDocs } from "firebase/firestore";
 import { useUser } from "@clerk/clerk-expo";
+import { SelectMarkerContext } from '../../Context/SelectMarkerContext';
 
 export default function PlaceListView({ placeList }) {
   // console.log('NearBy Ev Station',placeList);
-
+  const {selectedMarker,setSelectedMarker}=useContext(SelectMarkerContext);
+  useEffect(()=>{
+     selectedMarker&&scrollToIndex(selectedMarker)
+  },[selectedMarker]) 
 
   const [favlist, setFavlist] = useState([])
 
@@ -73,8 +77,8 @@ const isfav = (place) => {
           )}
         />
       </View>
-    )
-  );
+    ) 
+  ) 
 }
 
 const styles = StyleSheet.create({
