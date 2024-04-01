@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "Ev-Charging-Station-App",
-    "scheme": ["Ev-Charging-Station-App"],
+    "scheme": ["ev-charging-station-app"],
     "slug": "Ev-Charging-Station-App",
     "version": "1.0.0",
     "orientation": "portrait",
