@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "Ev-Charging-Station-App",
-    "scheme": "Ev-Charging-Station-App",
+    "scheme": ["Ev-Charging-Station-App"],
     "slug": "Ev-Charging-Station-App",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -14,7 +14,7 @@
     },
     "assetBundlePatterns": [
       "**/*"
-    ], 
+    ],
     "ios": {
       "supportsTablet": true
     },
@@ -22,11 +22,13 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      },  "permissions": [
+      },
+      "permissions": [
         "android.permission.ACCESS_COARSE_LOCATION",
         "android.permission.ACCESS_FINE_LOCATION",
         "android.permission.FOREGROUND_SERVICE"
-      ]
+      ],
+      "package": "com.uddeshyac9.EvChargingStationApp"
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -39,7 +41,11 @@
         }
       ],
       "expo-font"
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "e5019370-1a3f-4bfe-986b-f072ec2a136f"
+      }
+    }
   }
 }
-

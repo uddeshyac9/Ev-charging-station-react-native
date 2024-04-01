@@ -7,7 +7,7 @@ node_modules/
 .expo/
 dist/
 web-build/
-
+android/
 # Native
 *.orig.*
 *.jks
@@ -18,7 +18,7 @@ web-build/
 
 # Metro
 .metro-health-check*
-
+.idea/
 # debug
 npm-debug.*
 yarn-debug.*
@@ -30,6 +30,10 @@ yarn-error.*
 
 # local env files
 .env*.local
+*.env
+# ignores all .env files
+.env*
+
 
 # typescript
 *.tsbuildinfo

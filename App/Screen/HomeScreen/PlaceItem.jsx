@@ -11,7 +11,7 @@ import {
 } from "react-native";
 import React from "react";
 import Colors from "../../Utils/Colors";
-import { API_KEY } from "@env";
+// import { API_KEY } from "@env";
 import { LinearGradient } from "expo-linear-gradient";
 import { FontAwesome5 } from "@expo/vector-icons";
 import { Ionicons } from "@expo/vector-icons";
@@ -21,6 +21,7 @@ import { doc, setDoc, deleteDoc } from "firebase/firestore";
 import { AntDesign } from "@expo/vector-icons";
 import { useUser } from "@clerk/clerk-expo";
 import * as Linking from 'expo-linking';
+import GlobalApi from "../../Utils/GlobalApi";
 
 export default function PlaceItem({ place, isfav, markedFav }) {
   const { user } = useUser();
@@ -95,7 +96,7 @@ export default function PlaceItem({ place, isfav, markedFav }) {
                     PLACE_PHOTO_BASE_URL +
                     place?.photos[0]?.name +
                     "/media?key=" +
-                    API_KEY +
+                    GlobalApi.API_KEY +
                     "&maxHeightPx=800&maxWidthPx=1200",
                 }
               : require("./../../../assets/Images/ev-charging.png")

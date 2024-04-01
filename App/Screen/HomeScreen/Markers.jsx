@@ -23,7 +23,7 @@ export default function Markers({index, place }) {
     source={require('./../../../assets/Images/marker-selected.png')}
     style={{
       width: 50, height: 50,objectFit:'contain', borderRadius:50 ,
-      // zIndex: 5,
+      zIndex: 5,
     }}
   />
 ) : (
@@ -31,7 +31,7 @@ export default function Markers({index, place }) {
     source={require('./../../../assets/Images/ev-marker.png')}
     style={{
       width: 50, height: 50,objectFit:'contain', borderRadius:50 ,
-      // zIndex: -1,
+      zIndex: -1,
     }}
   />
 )}

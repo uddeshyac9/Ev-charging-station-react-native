@@ -58,7 +58,10 @@ export default function HomeScreen() {
           longitude:location.lng
         })} />
       </View>
-      {!placeList?<ActivityIndicator size={'large'}/>
+      {!placeList?   <View style={styles.activityIndicatorContainer}>
+      <ActivityIndicator size={'large'} />
+    </View>
+      
       : <AppMapView placeList={placeList}/>}
       <View style={styles.placeListContainer}>
         {placeList&&<PlaceListView placeList={placeList} />}
@@ -79,5 +82,10 @@ const styles = StyleSheet.create({
     zIndex:10,
     bottom:0,
     width:'100%'
-  }
+  },   activityIndicatorContainer: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    width:'100%'
+  },
 });

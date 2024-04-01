@@ -7,48 +7,66 @@ import LoginScreen from './App/Screen/LoginScreen/LoginScreen.jsx';
 import { ClerkProvider, SignedIn, SignedOut } from "@clerk/clerk-expo";
 import * as SecureStore from "expo-secure-store";
 import { NavigationContainer } from '@react-navigation/native';
-import TabNaviagtion from './App/Navigations/TabNaviagtion.jsx';
+import TabNavigation from './App/Navigations/TabNaviagtion.jsx';
 import * as Location from 'expo-location';
 import { UserLocationContext } from './App/Context/UserLocationContext.js';
+import GlobalApi from './App/Utils/GlobalApi.js';
 
 
 // Keep the splash screen visible while we fetch resources
-SplashScreen.preventAutoHideAsync();
-
+// SplashScreen.preventAutoHideAsync();
+const tokenCache = {
+  async getToken(key) {
+    try {
+      return SecureStore.getItemAsync(key);
+    } catch (err) {
+      return null;
+    }
+  },
+  async saveToken(key, value) {
+    try {
+      return SecureStore.setItemAsync(key, value);
+    } catch (err) {
+      return;
+    }
+  },
+};
 
 export default function App() {
-  const [location, setLocation] = useState(null);
+  const [fontsLoaded, fontError] = useFonts({
+    'Raleway-Regular': require('./assets/Fonts/Raleway-Regular.ttf'),
+    'Raleway-SemiBold': require('./assets/Fonts/Raleway-SemiBold.ttf'),
+    'Raleway-Bold': require('./assets/Fonts/Raleway-Bold.ttf'),
+  });
+  //Default Location
+  const [location, setLocation] = useState({
+    latitude:'29.6849979',
+    longitude:'77.6800181',
+  });
   const [errorMsg, setErrorMsg] = useState(null);
-
+ 
   useEffect(() => {
-    let isMounted = true;
-
-    const getLocation = async () => {
-      try {
-        
-        let { status } = await Location.requestForegroundPermissionsAsync();
-        if (status !== 'granted') {
-          setErrorMsg('Permission to access location was denied');
-          return;
-        }
-
-        const locationSubscription = Location.watchPositionAsync({}, (newLocation) => {
-          if (isMounted) {
-            setLocation(newLocation.coords);
-          }
-        });
-
-        return () => {
-          isMounted = false;
-          locationSubscription.remove();
-        };
-      } catch (error) {
-        console.error('Error getting location:', error);
-        setErrorMsg('Error getting location');
+    
+    (async () => {
+      
+      let { status } = await Location.requestForegroundPermissionsAsync();
+      if (status !== 'granted') {
+        setErrorMsg('Permission to access location was denied');
+        console.log("DENINED")
+        return;
       }
-    };
 
-    getLocation();
+      let location = await Location.getCurrentPositionAsync({});
+     setLocation(location.coords);
+      if(!location?.coords)
+      {
+        setLocation({ 
+          latitude:'29.6849979',
+          longitude:'77.6800181',
+        })
+      }
+     console.log("--m",location.coords)
+    })();
   }, []);
 
   let text = 'Waiting..';
@@ -58,54 +76,37 @@ export default function App() {
     text = JSON.stringify(location);
   }
 
-  const tokenCache = {
-    async getToken(key) {
-      try {
-        return SecureStore.getItemAsync(key);
-      } catch (err) {
-        return null;
-      }
-    },
-    async saveToken(key, value) {
-      try {
-        return SecureStore.setItemAsync(key, value);
-      } catch (err) {
-        return;
-      }
-    },
-  };
-  const [fontsLoaded, fontError] = useFonts({
-    'Raleway-Regular': require('./assets/Fonts/Raleway-Regular.ttf'),
-    'Raleway-SemiBold': require('./assets/Fonts/Raleway-SemiBold.ttf'),
-    'Raleway-Bold': require('./assets/Fonts/Raleway-Bold.ttf'),
-  });
+  // const onLayoutRootView = useCallback(async () => {
+  //   if (fontsLoaded) {
+  //     await SplashScreen.hideAsync();
+  //   }
+  // }, [fontsLoaded]);
 
-  const onLayoutRootView = useCallback(async () => {
-    if (fontsLoaded || fontError) {
-      await SplashScreen.hideAsync();
-    }
-  }, [fontsLoaded, fontError]);
-
-  if (!fontsLoaded && !fontError) {
-    return null;
-  }
+  // if (!fontsLoaded) {
+  //   return null;
+  // }
   return (
-    <ClerkProvider tokenCache={tokenCache} publishableKey={"pk_test_ZmFtb3VzLWdhcmZpc2gtMzkuY2xlcmsuYWNjb3VudHMuZGV2JA"}>
-    <UserLocationContext.Provider value={{location,setLocation } }>
-    <View style={styles.container} onLayout={onLayoutRootView}>
-    <SignedIn>
+    <ClerkProvider 
+    tokenCache={tokenCache}
+    publishableKey={GlobalApi.CLERK_API_KEY}>
+    <UserLocationContext.Provider 
+    value={{location,setLocation}}>
+    <View style={styles.container}>
+      <SignedIn>
+       
           <NavigationContainer>
-            <TabNaviagtion/>
+            <TabNavigation/>
           </NavigationContainer>
-        </SignedIn>
-        <SignedOut>
+      </SignedIn>
+      <SignedOut>
         <LoginScreen/>
-        </SignedOut>
+      </SignedOut>
       
       <StatusBar style="auto" />
     </View>
     </UserLocationContext.Provider>
     </ClerkProvider>
+  
   );
 }
 
@@ -113,8 +114,13 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    marginTop:30
- 
-     
+    paddingTop:25
   },
 });
+
+
+
+
+
+
+

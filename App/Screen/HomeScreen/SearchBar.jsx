@@ -3,8 +3,9 @@ import React from "react";
 import { GooglePlacesAutocomplete } from "react-native-google-places-autocomplete";
 import Colors from "../../Utils/Colors";
 import { FontAwesome } from '@expo/vector-icons';
+import GlobalApi from "../../Utils/GlobalApi";
 
-import {API_KEY} from '@env'
+// import {API_KEY} from '@env'
 
 
 export default function SearchBar({searchedLocation}) {
@@ -30,7 +31,7 @@ export default function SearchBar({searchedLocation}) {
           
         }}
         query={{
-          key: API_KEY,
+          key: GlobalApi.API_KEY,
           language: "en",
         }}
        
