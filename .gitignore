@@ -18,7 +18,7 @@ android/
 
 # Metro
 .metro-health-check*
-.idea/
+
 # debug
 npm-debug.*
 yarn-debug.*
