@@ -19,9 +19,14 @@
       "supportsTablet": true
     },
     "android": {
+ 
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
+      },    "config": {
+        "googleMaps": {
+           "apiKey": "Your-Api-Key"
+        }
       },
       "permissions": [
         "android.permission.ACCESS_COARSE_LOCATION",
@@ -29,6 +34,7 @@
         "android.permission.FOREGROUND_SERVICE"
       ],
       "package": "com.uddeshyac9.EvChargingStationApp"
+     
     },
     "web": {
       "favicon": "./assets/favicon.png"
