@@ -8,6 +8,8 @@ node_modules/
 dist/
 web-build/
 android/
+.idea/
+%ProgramData%/
 # Native
 *.orig.*
 *.jks
