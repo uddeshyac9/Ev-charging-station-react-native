@@ -6,7 +6,7 @@ import { useNavigation } from '@react-navigation/native'
 
 
 export default function ProfileScreen() {
-  const { user,  } = useUser();
+  const { user  } = useUser();
   const navigation = useNavigation();
   const { isLoaded, signOut } = useAuth();
   const handleSignOut = () => {
